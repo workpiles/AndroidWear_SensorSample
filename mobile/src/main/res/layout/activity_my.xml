@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyActivity">
+
+
+    <view
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        class="com.example.sensorsample.MySurfaceVeiw"
+        android:id="@+id/surfaceView_main"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Punch"
+        android:id="@+id/button_p"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upper"
+        android:id="@+id/button_u"
+        android:layout_alignBottom="@+id/button_p"
+        android:layout_toEndOf="@+id/button_p"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hook"
+        android:id="@+id/button_h"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/button_u"
+        android:visibility="invisible" />
+</RelativeLayout>
